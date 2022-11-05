@@ -1,0 +1,80 @@
+package example.micronaut.model;
+
+import example.micronaut.model.Problem;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
+
+
+/**
+ * Model tests for DisallowedResourceProblem
+ */
+@MicronautTest
+public class DisallowedResourceProblemTest {
+    private final DisallowedResourceProblem model = null;
+
+    /**
+     * Model tests for DisallowedResourceProblem
+     */
+    @Test
+    public void testDisallowedResourceProblem() {
+        // TODO: test DisallowedResourceProblem
+    }
+
+    /**
+     * Test the property 'detail'
+     */
+    @Test
+    public void detailTest() {
+        // TODO: test detail
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
+    }
+
+    /**
+     * Test the property 'title'
+     */
+    @Test
+    public void titleTest() {
+        // TODO: test title
+    }
+
+    /**
+     * Test the property 'type'
+     */
+    @Test
+    public void typeTest() {
+        // TODO: test type
+    }
+
+    /**
+     * Test the property 'resourceId'
+     */
+    @Test
+    public void resourceIdTest() {
+        // TODO: test resourceId
+    }
+
+    /**
+     * Test the property 'resourceType'
+     */
+    @Test
+    public void resourceTypeTest() {
+        // TODO: test resourceType
+    }
+
+    /**
+     * Test the property 'section'
+     */
+    @Test
+    public void sectionTest() {
+        // TODO: test section
+    }
+
+}
