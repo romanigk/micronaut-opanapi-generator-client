@@ -1,6 +1,7 @@
 package example.micronaut.api;
 
 import example.micronaut.model.CreateComplianceJobRequest;
+import example.micronaut.model.CreateComplianceJobRequest.TypeEnum;
 import example.micronaut.model.CreateComplianceJobResponse;
 import example.micronaut.model.Error;
 import example.micronaut.model.Get2ComplianceJobsIdResponse;
@@ -28,7 +29,7 @@ import java.util.HashSet;
  * API tests for ComplianceApi
  */
 @MicronautTest
-public class ComplianceApiTest {
+class ComplianceApiTest {
 
     @Inject
     ComplianceApi api;
@@ -41,9 +42,10 @@ public class ComplianceApiTest {
      */
     @Test
     @Disabled("Not Implemented")
-    public void createBatchComplianceJobTest() {
+    void createBatchComplianceJobTest() {
         // given
-        CreateComplianceJobRequest createComplianceJobRequest = new CreateComplianceJobRequest("example");
+        CreateComplianceJobRequest createComplianceJobRequest = new CreateComplianceJobRequest(
+            TypeEnum.TWEETS);
 
         // when
         CreateComplianceJobResponse body = api.createBatchComplianceJob(createComplianceJobRequest).block();

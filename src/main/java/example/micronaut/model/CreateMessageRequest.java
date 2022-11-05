@@ -12,19 +12,17 @@
 
 package example.micronaut.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import example.micronaut.model.CreateAttachmentsMessageRequest;
-import example.micronaut.model.CreateTextMessageRequest;
-import example.micronaut.model.DmMediaAttachment;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
+import io.micronaut.core.annotation.Introspected;
 import java.util.ArrayList;
 import java.util.List;
-import com.fasterxml.jackson.annotation.*;
-
-import javax.validation.constraints.*;
-import javax.validation.Valid;
-import io.micronaut.core.annotation.*;
+import java.util.Objects;
 import javax.annotation.Generated;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * CreateMessageRequest
